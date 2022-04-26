@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Rubik:wght@700&family=Sora:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+    height: 9000px;
+}
+
+.flex-container {
+    background-color: rgba(198, 198, 199, 0.411);
+    position: absolute;
+    /* position: fixed; */
+    top: 20px;
+    left: 120px;
+    right: 120px;
+    align-items: center;
+    display: inline;
+    border: 2.4px solid rgb(27, 27, 27);
+    border-radius: 30px;
+    width: 60%;
+    margin: auto;
+    backdrop-filter: blur(1.2rem);
+    font-family: 'Manrope', sans-serif;
+    z-index: 5;
+    /* box-shadow: 0px 10px 50px 3px rgb(37, 37, 37); */
+}
+
+.flex-container > #span1 {
+    position: relative;
+    float: right;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 15px;
+    margin-top: 19px;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+    color: rgb(247, 173, 63);
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+}
+.flex-container > #span2 {
+    position: relative;
+    float: right;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 15px;
+    margin-top: 19px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+    color: rgb(247, 173, 63);
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+}
+.flex-container > #head {
+    color: rgb(0, 0, 0);
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.hook-title{
+    position: relative;
+    top: 150px;
+    line-height: 60px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+#emotion{
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+#tagline{
+    letter-spacing: 1px;
+    line-height: 120px;
+}
+#screenshot{
+    border-radius: 10px;
+}
+
+.call-of-action-1{
+    position: relative;
+    top: 280px;
+}
+.call-of-action-1 > button{
+    /* background: linear-gradient(to right, #30CFD0, #c43ad6); */
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    /* letter-spacing: 1.2px; */
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.call-of-action-1 > button:hover{
+    box-shadow: 0px 0px 10px 7px white;
+    transition: .3s;
+}
+.call-of-action-1 > button:not(hover){
+    transition: .3s;
+}
+
+.team{
+    position: relative;
+    top: 400px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media all and (max-width: 500px){
+    .flex-container {
+        background-color: rgba(27, 27, 27, 0.411);
+        position: absolute;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        align-items: center;
+        display: inline;
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        margin: auto;
+        backdrop-filter: blur(1.2rem);
+        font-family: 'Manrope', sans-serif;
+        z-index: 5;
+    }
+    .flex-container > #head{
+        color: white;
+    }
+    .hook-title{
+        position: relative;
+        top: 150px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+    }
+    #tagline{
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 120px;
+        text-align: center;
+    }
+    #screenshot{
+        border-radius: 10px;
+    }
+    
+    .call-of-action-1{
+        position: relative;
+        top: 280px;
+    }
+    .call-of-action-1 > button{
+        /* background: linear-gradient(to right, #30CFD0, #c43ad6); */
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        /* letter-spacing: 1.2px; */
+        font-weight: 400;
+        font-family: 'Manrope', sans-serif;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .call-of-action-1 > button:hover{
+        box-shadow: 0px 0px 10px 7px white;
+        transition: .3s;
+    }
+    .call-of-action-1 > button:not(hover){
+        transition: .3s;
+    }
+    
+    .team{
+        position: relative;
+        top: 400px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Manrope', sans-serif;
+    }
+
+}
