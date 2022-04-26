@@ -160,12 +160,16 @@ body{
         font-family: 'Manrope', sans-serif;
     }
     #tagline{
+        position: relative;
+        top: 40px;
         font-size: 16px;
         letter-spacing: 1px;
-        line-height: 120px;
+        line-height: 30px;
         text-align: center;
     }
     #screenshot{
+        position: relative;
+        top: 45px;
         border-radius: 10px;
     }
     
