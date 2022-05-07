@@ -1,211 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Rubik:wght@700&family=Sora:wght@700&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: rgb(27, 27, 27);
-    height: 9000px;
-}
-
-.flex-container {
-    background-color: rgba(198, 198, 199, 0.411);
+/* HOMEBAR  BEGIN */
+.div-homebar{
     position: absolute;
     /* position: fixed; */
-    top: 20px;
-    left: 120px;
-    right: 120px;
-    align-items: center;
-    display: inline;
-    border: 2.4px solid rgb(27, 27, 27);
-    border-radius: 30px;
-    width: 60%;
-    margin: auto;
-    backdrop-filter: blur(1.2rem);
-    font-family: 'Manrope', sans-serif;
-    z-index: 5;
-    /* box-shadow: 0px 10px 50px 3px rgb(37, 37, 37); */
+    width: 100%;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+    background-color: #7556F1;
+    z-index: 1;
 }
 
-.flex-container > #span1 {
-    position: relative;
-    float: right;
-    /* display: inline-block; */
-    text-align: center;
-    margin: 15px;
-    margin-top: 19px;
-    padding: 10px;
-    border-radius: 10px;
-    /* background-color: rgba(255, 255, 255, 0.432); */
-    color: rgb(247, 173, 63);
-    font-size: 18px;
-    font-family: 'Manrope', sans-serif;
+/* LOGO HEAD BEGIN */
+.div-logo-head{
+    position: absolute;
+    top: -5px;
+    height: 77px;
+    width: 230px;
 }
-.flex-container > #span2 {
-    position: relative;
+.div-logo-head> span > h2{
+    position: absolute;
     float: right;
-    /* display: inline-block; */
-    text-align: center;
-    margin: 15px;
-    margin-top: 19px;
-    margin-left: 0px;
-    padding: 10px;
-    border-radius: 10px;
-    /* background-color: rgba(255, 255, 255, 0.432); */
-    color: rgb(247, 173, 63);
-    font-size: 18px;
-    font-family: 'Manrope', sans-serif;
+    top: -8px;
+    right: 5px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
 }
-.flex-container > #head {
-    color: rgb(0, 0, 0);
+.div-logo-head> span > p{
+    position: absolute;
     float: left;
-    margin-right: 10px;
-    position: relative;
-    margin: 15px;
-    padding: 10px;
-    font-size: 23px;
-    letter-spacing: 1px;
-    font-family: 'Manrope', sans-serif;
+    top: 12px;
+    left: 10px;
+}
+/* LOGO HEAD END */
+
+/* searchbar BEGIN */
+.div-searchbar{
+    margin: auto;
 }
 
-.hook-title{
-    position: relative;
-    top: 150px;
-    line-height: 60px;
-    font-size: 25px;
-    color: white;
-    font-family: 'Manrope', sans-serif;
+#id-searchbar-txt{
+    position: absolute;
+    width: 665px;
+    height: 45px;
+    left: 450px;
+    top: 8.5px;
+    background: rgba(255, 255, 255, 0.53);
+    border: none;
+    text-align: center;
+    font-family: 'Manarope', sans-serif;
+    font-size: 20px;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    z-index: 2;
 }
-#emotion{
-    background: linear-gradient(to right, #30CFD0, #c43ad6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#id-searchbar-txt:hover{
+    transition: .3s;
+    /* background-color: #ffffff; */
+    border-color: none;
+}#id-searchbar-txt:focus{
+    transition: .3s;
+    /* background-color: #ffffff; */
+    border: none;
+}
+#id-searchbar-txt::placeholder{
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    color: #494848;
+    transition: color .3s ease;
+}
+#id-searchbar-txt:focus::placeholder{
+    transition: .3s;
+    font-size: 22px;
+    transform: translateY(-40px);
+    color: transparent;
+}
+#id-searchbar-txt:not(focus)::placeholder{
+    transition: .3s;
+    font-size: 22px;
+    
+}
+/* searchbar END */
 
+/* profile icon BEGIN*/
+.div-profile-util-outline{
+    position: absolute;
+    float: right;
+    width: 97px;
+    height: 45px;
+    right: 30px;
+    top: 8.5px;
+
+    background: rgba(255, 255, 255, 0.53);
+    border-radius: 20px;
+    z-index: 2;
 }
-#tagline{
-    letter-spacing: 1px;
-    line-height: 120px;
+.user-icon{
+    /* position: absolute;
+    width: 40px;
+    height: 41.57px;
+    left: 1306px;
+    top: 18px; */
 }
-#screenshot{
+/* profile icon END*/
+
+/* HOMEBAR END */
+
+
+
+/* LEFT NAV PANEL BEGIN */
+.left-nav-pane{
+    position: absolute;
+    /* position: fixed; */
+    float: left;
+    width: 274px;
+    height: 739px;
+    left: 0px;
+    top: 65px;
+
+    background: #EFEFEF;
+    z-index: 0;
+} 
+.left-nav-pane-btns{
+    position: relative;
+    top: 20px;
+    text-align: left;
+    /* background-color: red; */
+}
+.left-nav-pane-btns > input{
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.left-nav-pane-btns > input:hover{
+    background-color: #a390f079;
     border-radius: 10px;
 }
 
-.call-of-action-1{
-    position: relative;
-    top: 280px;
-}
-.call-of-action-1 > button{
-    /* background: linear-gradient(to right, #30CFD0, #c43ad6); */
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 30px;
+
+.mid-panel-head{
+    position: absolute;
+    width: 418px;
+    height: 90px;
+    left: 332px;
+    top: 70px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
-    /* letter-spacing: 1.2px; */
-    font-weight: 400;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.call-of-action-1 > button:hover{
-    box-shadow: 0px 0px 10px 7px white;
-    transition: .3s;
-}
-.call-of-action-1 > button:not(hover){
-    transition: .3s;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+
+    color: #000000;
 }
 
-.team{
-    position: relative;
-    top: 400px;
-    font-size: 25px;
-    color: white;
-    font-family: 'Manrope', sans-serif;
+
+
+.right-pane{
+    position: absolute;
+    /* position: fixed; */
+    float: right;
+    width: 274px;
+    height: 739px;
+    right: 0px;
+    top: 65px;
+    background: #EFEFEF;
+    z-index: 0;
+} 
+
+.center-pane{
+    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 650px;
+    z-index: 4;
 }
 
-@media all and (max-width: 500px){
-    .flex-container {
-        background-color: rgba(27, 27, 27, 0.411);
-        position: absolute;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        align-items: center;
-        display: inline;
-        border: none;
-        border-radius: 0px;
-        width: 100%;
-        margin: auto;
-        backdrop-filter: blur(1.2rem);
-        font-family: 'Manrope', sans-serif;
-        z-index: 5;
-    }
-    .flex-container > #head{
-        color: white;
-    }
-    .hook-title{
-        position: relative;
-        top: 150px;
-        line-height: 40px;
-        font-size: 18px;
-        color: white;
-        font-family: 'Manrope', sans-serif;
-    }
-    #tagline{
-        position: relative;
-        top: 40px;
-        font-size: 16px;
-        letter-spacing: 1px;
-        line-height: 30px;
-        text-align: center;
-    }
-    #screenshot{
-        position: relative;
-        top: 45px;
-        border-radius: 10px;
-    }
-    
-    .call-of-action-1{
-        position: relative;
-        top: 280px;
-    }
-    .call-of-action-1 > button{
-        /* background: linear-gradient(to right, #30CFD0, #c43ad6); */
-        background-color: white;
-        color: black;
-        border: none;
-        border-radius: 30px;
-        font-size: 20px;
-        /* letter-spacing: 1.2px; */
-        font-weight: 400;
-        font-family: 'Manrope', sans-serif;
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .call-of-action-1 > button:hover{
-        box-shadow: 0px 0px 10px 7px white;
-        transition: .3s;
-    }
-    .call-of-action-1 > button:not(hover){
-        transition: .3s;
-    }
-    
-    .team{
-        position: relative;
-        top: 400px;
-        font-size: 18px;
-        color: white;
-        font-family: 'Manrope', sans-serif;
-    }
+#btn-new-proj-2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background-color: #a390f079;
+    border: none;
+    padding: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 7.5px #a390f079;
+}
 
+.right-pane > .label{
+    position: absolute;
+    width: 274px;
+    height: 40px;
+
+    background: #D8D8D8;
+}
+.right-pane > .label > h1{
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 7px;
+    margin-top: 7px;
 }
