@@ -12,7 +12,7 @@ function alert_No_access_to_mobile(){
     let isMobileDevice = regexp.test(details);
 
     if (isMobileDevice) {
-        window.location.href = 'error.html';
+        window.location.href = '/error.html';
     } else {
         alert("You are using Desktop");
     }
