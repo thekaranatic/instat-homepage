@@ -1,6 +1,6 @@
 function alert_No_access_to_mobile(){
     if(isMobileDevice)
-        window.location = 'error.html';
+        window.location.href = 'error.html';
     else
-        window.location = 'app.html';
+        window.location.href = 'app.html';
 }
